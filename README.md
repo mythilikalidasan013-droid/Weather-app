@@ -17,5 +17,4 @@ for any city using OpenWeatherMap API.
 ## 🛠️ Tech Stack
 HTML5 · CSS3 · JavaScript · OpenWeatherMap API
 
-## 👩‍💻 Developer
-Made with ❤️ by Mythili K
+
