@@ -1,2 +1,21 @@
-# Weather-app
-"A responsive web application that provides real-time weather information for any city around the world. Built using HTML, CSS, and JavaScript, this app fetches live weather data using the OpenWeatherMap API and displays temperature, humidity, wind speed, and weather conditions with a clean and user-friendly interface
+# ⛅ WeatherWise — Real-Time Weather App
+
+🌍 Search. 🌡️ Check. ☂️ Prepare.
+
+A sleek weather application that fetches live data 
+for any city using OpenWeatherMap API.
+
+## 🔥 Features
+| Feature | Status |
+|---|---|
+| City Search | ✅ |
+| Temperature | ✅ |
+| Humidity | ✅ |
+| Wind Speed | ✅ |
+| Responsive UI | ✅ |
+
+## 🛠️ Tech Stack
+HTML5 · CSS3 · JavaScript · OpenWeatherMap API
+
+## 👩‍💻 Developer
+Made with ❤️ by Mythili K
