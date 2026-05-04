@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SkyCast</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="app">
+
+  <!-- 🔥 LOGO / BRAND -->
+  <div class="brand">
+    <div class="logo">
+      <div class="sun"></div>
+      <div class="cloud"></div>
+    </div>
+    <h1>SkyCast</h1>
+    <p>Real-time Weather Insights</p>
+  </div>
+
+  <!-- 🌟 CARD -->
+  <div class="card">
+
+    <!-- SEARCH -->
+    <div class="search">
+      <input id="cityInput" placeholder="Search city...">
+      <button id="searchBtn">🔍</button>
+    </div>
+
+    <!-- DEFAULT STATE -->
+    <div id="placeholder" class="placeholder">
+      <p>Search a city to view weather</p>
+    </div>
+
+    <!-- WEATHER -->
+    <div id="weather" class="hidden">
+      <h2 id="city"></h2>
+      <h1 id="temp"></h1>
+      <p id="condition"></p>
+
+      <div class="details">
+        <div>💧 <span id="humidity"></span></div>
+        <div>🌬 <span id="wind"></span></div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  overflow:hidden;
+}
+
+/* 🌈 Animated Background */
+.bg{
+  position:absolute;
+  width:200%;
+  height:200%;
+  background: linear-gradient(135deg,#4facfe,#00f2fe,#667eea,#764ba2);
+  animation: moveBg 12s infinite linear;
+  z-index:-1;
+}
+
+@keyframes moveBg{
+  0%{transform:translate(0,0)}
+  50%{transform:translate(-20%,-20%)}
+  100%{transform:translate(0,0)}
+}
+
+/* APP */
+.app{
+  width:100%;
+  max-width:420px;
+  padding:20px;
+}
+
+/* 🔥 BRAND */
+.brand{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.brand h1{
+  font-size:28px;
+  font-weight:600;
+}
+
+.brand p{
+  font-size:14px;
+  opacity:0.8;
+}
+
+/* LOGO */
+.logo{
+  position:relative;
+  width:60px;
+  height:60px;
+  margin:auto;
+  margin-bottom:10px;
+}
+
+.sun{
+  width:30px;
+  height:30px;
+  background: radial-gradient(circle,#ffd93d,#ff9f1c);
+  border-radius:50%;
+  position:absolute;
+  top:5px;
+  left:5px;
+  animation: glow 3s infinite alternate;
+}
+
+@keyframes glow{
+  from{box-shadow:0 0 10px #ffd93d}
+  to{box-shadow:0 0 30px #ffd93d}
+}
+
+.cloud{
+  width:40px;
+  height:20px;
+  background: white;
+  border-radius:20px;
+  position:absolute;
+  bottom:5px;
+  right:0;
+}
+
+/* 🌟 GLASS CARD */
+.card{
+  backdrop-filter: blur(25px);
+  background: rgba(255,255,255,0.1);
+  border-radius:25px;
+  padding:25px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.3);
+  transition:0.4s;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-10px)}
+}
+
+/* SEARCH */
+.search{
+  display:flex;
+  gap:10px;
+}
+
+.search input{
+  flex:1;
+  padding:12px;
+  border-radius:12px;
+  border:none;
+  outline:none;
+  background:rgba(255,255,255,0.2);
+  color:white;
+  transition:0.3s;
+}
+
+.search input:focus{
+  box-shadow:0 0 10px rgba(255,255,255,0.6);
+}
+
+.search button{
+  padding:12px;
+  border:none;
+  border-radius:12px;
+  background:white;
+  cursor:pointer;
+}
+
+/* PLACEHOLDER */
+.placeholder{
+  text-align:center;
+  margin-top:20px;
+  opacity:0.7;
+}
+
+/* WEATHER */
+#weather{
+  text-align:center;
+  margin-top:20px;
+}
+
+#temp{
+  font-size:48px;
+  margin:10px 0;
+}
+
+.details{
+  display:flex;
+  justify-content:space-around;
+  margin-top:15px;
+}
+
+/* UTIL */
+.hidden{
+  display:none;
+}
